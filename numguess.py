@@ -6,9 +6,12 @@ print(answimport random
 
 
 answer = random.randint(1,100)
-username = input("Hi there, What's your name?? ")
-trial = 5
+username = input("NAME ")
+trial = int(input())
 while trial:
+    if trial == 0:
+        print('exit')
+        break
     guess = eval(input("Hi, "+ username + ". guess the number: "))
 
     if guess == answer:
